@@ -8,7 +8,6 @@ public class HeadDestroy : MonoBehaviour
     {
         if (collision.gameObject.tag == "mario")
         {
-            Debug.Log("Destroy");
             Destroy(transform.parent.gameObject);
         }
     }

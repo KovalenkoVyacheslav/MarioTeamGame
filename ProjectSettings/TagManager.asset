@@ -10,6 +10,9 @@ TagManager:
   - mush
   - enemy
   - head
+  - bricks
+  - qm
+  - coin
   layers:
   - Default
   - TransparentFX
