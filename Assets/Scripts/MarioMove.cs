@@ -50,23 +50,17 @@ public class MarioMove : MonoBehaviour
     // 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "ground" || collision.gameObject.tag == "wall")//Player landed to the ground
+        if(collision.gameObject.tag == "ground" || collision.gameObject.tag == "wall" || 
+            collision.gameObject.tag == "qm" || collision.gameObject.tag == "bricks")//Player landed to the ground
             grounded = true;
 
         if(collision.gameObject.tag == "mush")
+        {
             IncreasePlayer();
-
-        //if (collision.gameObject.tag == "test")
-        //    Debug.Log("collision is work");
+            collision.gameObject.SetActive(false);
+        }
+            
     }
-
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "test")
-    //        Debug.Log("trigger is work");
-    //}
-
 
     IEnumerator Wait()
     {

@@ -60,14 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraFollowByMario.cs" />
     <Compile Include="Assets\Scripts\EnemyMove.cs" />
+    <Compile Include="Assets\Scripts\GetCoinFromQM.cs" />
+    <Compile Include="Assets\Scripts\GetMushFromQM.cs" />
     <Compile Include="Assets\Scripts\HeadDestroy.cs" />
     <Compile Include="Assets\Scripts\MarioMove.cs" />
-    <None Include="Assets\Images\do_not_delete.txt" />
-    <None Include="Assets\Animations\do_not_delete.txt" />
-    <None Include="Assets\Textures\do_not_delete2.txt" />
-    <None Include="Assets\Musics\do_not_delete.txt" />
-    <None Include="Assets\Scripts\do_not_delete.txt" />
+    <None Include="Assets\Prefabs\do_not_delete.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/012Unity/017TeamMario/MarioTeamGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
