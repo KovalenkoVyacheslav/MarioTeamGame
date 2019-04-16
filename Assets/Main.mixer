@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Main
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: cd62142a19bb51c4894747b829f69b24
+    name: volume
+  - guid: 3691db0c81a56f447a6729e28ff3045e
+    name: goomba
+  - guid: 22aca326da089844e976333e180653af
+    name: mushroom
+  m_AudioMixerGroupViews:
+  - guids:
+    - 6b90983b4e20d4f43bd15434aacdd35e
+    - a63ea8fca750f01428b62328cc897a6e
+    - 3c8b62e943cae174eb1a48991f7d7b0f
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 6b90983b4e20d4f43bd15434aacdd35e
+  m_Children:
+  - {fileID: 243483761474988156}
+  - {fileID: 243086227493491518}
+  m_Volume: cd62142a19bb51c4894747b829f69b24
+  m_Pitch: 53da499f8f3ef8d42a2c3e97b9310bfb
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 4c194382360decf4fabc36a9ae3ceda0
+  m_EffectName: Attenuation
+  m_MixLevel: bfdeae5879bba1e4f81494187b780690
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: cfb84f50c09179d46b0bfdafee14ced9
+  m_FloatValues:
+    cd62142a19bb51c4894747b829f69b24: -21.476906
+    3691db0c81a56f447a6729e28ff3045e: 0.007400036
+  m_TransitionOverrides: {}
+--- !u!243 &243086227493491518
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: mushroom
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 3c8b62e943cae174eb1a48991f7d7b0f
+  m_Children: []
+  m_Volume: 22aca326da089844e976333e180653af
+  m_Pitch: 883808a0cce0db94b940ffe13af17c61
+  m_Effects:
+  - {fileID: 244864845447243520}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243483761474988156
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: goomba
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: a63ea8fca750f01428b62328cc897a6e
+  m_Children: []
+  m_Volume: 3691db0c81a56f447a6729e28ff3045e
+  m_Pitch: c775353849164824495edabb76969da4
+  m_Effects:
+  - {fileID: 244527769806276488}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244527769806276488
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 8ecd7979cf84cb649a8b5d0f40c4e707
+  m_EffectName: Attenuation
+  m_MixLevel: 9bd4304dee726634f90759b59efb5b14
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244864845447243520
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 29fd83d7fb3475d44a4568db63ecf44d
+  m_EffectName: Attenuation
+  m_MixLevel: fc0a447de6e0a6241b2cbc48676132cd
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0

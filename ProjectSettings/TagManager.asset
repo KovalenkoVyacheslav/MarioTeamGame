@@ -10,6 +10,8 @@ TagManager:
   - mush
   - enemy
   - head
+  - gamemenu
+  - settings
   layers:
   - Default
   - TransparentFX
