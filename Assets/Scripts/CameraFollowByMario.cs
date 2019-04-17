@@ -18,7 +18,7 @@ public class CameraFollowByMario : MonoBehaviour
         }
         catch(Exception exp)
         {
-            Debug.Log("Error");
+            Debug.Log("Error: " + exp.Message);
         }
     }
 }
