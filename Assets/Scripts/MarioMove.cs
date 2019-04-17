@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MarioMove : MonoBehaviour
 {
@@ -59,7 +60,13 @@ public class MarioMove : MonoBehaviour
             IncreasePlayer();
             collision.gameObject.SetActive(false);
         }
-            
+
+        if (collision.gameObject.tag == "LevelUP")
+        {
+            SceneManager.LoadScene("Level2");
+        }
+
+
     }
 
     IEnumerator Wait()

@@ -25,7 +25,7 @@ public class EnemyMove : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "wall")
+        if (collision.gameObject.tag == "wall" || collision.gameObject.tag == "bricks")
         {
             state = !state;
             GetComponent<SpriteRenderer>().flipX = !state;
