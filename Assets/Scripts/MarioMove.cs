@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MarioMove : MonoBehaviour
 {
@@ -47,6 +48,17 @@ public class MarioMove : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "mush")
+        {
+            IncreasePlayer();
+            collision.gameObject.SetActive(false);
+        }
+
+       
+    }
+
     // 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -54,12 +66,12 @@ public class MarioMove : MonoBehaviour
             collision.gameObject.tag == "qm" || collision.gameObject.tag == "bricks")//Player landed to the ground
             grounded = true;
 
-        if(collision.gameObject.tag == "mush")
+        
+ if (collision.gameObject.tag == "LevelUP")
         {
-            IncreasePlayer();
-            collision.gameObject.SetActive(false);
+            SceneManager.LoadScene("Level2");
         }
-            
+
     }
 
     IEnumerator Wait()

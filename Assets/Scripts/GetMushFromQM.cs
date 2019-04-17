@@ -23,7 +23,7 @@ public class GetMushFromQM : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isMushGo)
+        if (isMushGo && _mush)
         {
             _mush.position = Vector3.Lerp(_mush.position, endpos, 2.5f * Time.deltaTime);
         }
