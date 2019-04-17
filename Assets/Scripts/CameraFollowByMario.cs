@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +10,9 @@ public class CameraFollowByMario : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (mario.position.x > transform.position.x)
+        try
         {
+<<<<<<< HEAD
             transform.position = new Vector3(mario.position.x + relative.x, transform.position.y, transform.position.z);
         }
         else if (mario.position.x < transform.position.x)
@@ -25,6 +27,16 @@ public class CameraFollowByMario : MonoBehaviour
         else if (mario.position.y < transform.position.y)
         {
             transform.position = new Vector3(transform.position.x, mario.position.y + relative.y, transform.position.z);
+=======
+            if (mario.position.x > transform.position.x)
+            {
+                transform.position = mario.position + relative;
+            }
+        }
+        catch(Exception exp)
+        {
+            Debug.Log("Error");
+>>>>>>> 4ae434a4b14ec76285a1c0c36e700852b9109fca
         }
 
 
