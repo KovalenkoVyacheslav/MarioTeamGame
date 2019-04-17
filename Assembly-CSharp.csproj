@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\HeadDestroy.cs" />
     <Compile Include="Assets\Scripts\MarioDestroy.cs" />
     <Compile Include="Assets\Scripts\MarioMove.cs" />
+    <Compile Include="Assets\Scripts\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\volumeGoomba.cs" />
     <Compile Include="Assets\Scripts\volumeMushroom.cs" />
     <Compile Include="Assets\Scripts\volumeRegulator.cs" />

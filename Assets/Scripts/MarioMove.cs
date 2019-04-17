@@ -48,6 +48,17 @@ public class MarioMove : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "mush")
+        {
+            IncreasePlayer();
+            collision.gameObject.SetActive(false);
+        }
+
+       
+    }
+
     // 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -55,17 +66,11 @@ public class MarioMove : MonoBehaviour
             collision.gameObject.tag == "qm" || collision.gameObject.tag == "bricks")//Player landed to the ground
             grounded = true;
 
-        if(collision.gameObject.tag == "mush")
-        {
-            IncreasePlayer();
-            collision.gameObject.SetActive(false);
-        }
-
-        if (collision.gameObject.tag == "LevelUP")
+        
+ if (collision.gameObject.tag == "LevelUP")
         {
             SceneManager.LoadScene("Level2");
         }
-
 
     }
 

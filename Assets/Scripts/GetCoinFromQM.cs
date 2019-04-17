@@ -24,7 +24,7 @@ public class GetCoinFromQM : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(isCoinGo)
+        if(isCoinGo && _coin)
         {
             _coin.position = Vector3.Lerp(_coin.position, endpos, 2.5f * Time.deltaTime);
             DestroyCoin();
