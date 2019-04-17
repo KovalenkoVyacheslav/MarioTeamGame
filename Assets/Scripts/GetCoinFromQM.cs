@@ -8,12 +8,18 @@ public class GetCoinFromQM : MonoBehaviour
     public Transform _coin;
     public float y_coor;
     Vector3 endpos;
+    public Sprite spr;
+    SpriteRenderer rend;
+    Animator anim;
+    public AnimationClip clip;
 
     bool isCoinGo = false;
 
     void Start()
     {
         endpos = _coin.position + new Vector3(0, y_coor, 0);
+        rend = gameObject.GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -28,8 +34,10 @@ public class GetCoinFromQM : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "mario")
-        {
+        {          
             isCoinGo = true;
+            anim.enabled = false;
+            rend.sprite = spr;
         }
     }
 

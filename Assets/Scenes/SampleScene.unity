@@ -410,7 +410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452676323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.2846317, y: -1.2599202, z: 0.14492734}
+  m_LocalPosition: {x: -7.284632, y: -1.2599202, z: 0.1449273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 990897207}
@@ -456,6 +456,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _coin: {fileID: 1050881647}
   y_coor: 5
+  spr: {fileID: 21300000, guid: 4f0736020e5f17d4d8068e8419d3225c, type: 3}
+  clip: {fileID: 7400000, guid: 49ed76fa92dc5174c91627afa89460d8, type: 2}
 --- !u!1 &489318800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mush: {fileID: 765913201}
   y_coor: 1.05
+  spr: {fileID: 21300000, guid: 4f0736020e5f17d4d8068e8419d3225c, type: 3}
 --- !u!95 &1530924161
 Animator:
   serializedVersion: 3
@@ -1392,7 +1395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530924159}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.342186, y: -2.6, z: 0.29381642}
+  m_LocalPosition: {x: -9.342186, y: -2.6, z: 0.2938164}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 489318801}
@@ -1409,6 +1412,7 @@ GameObject:
   - component: {fileID: 1870358785}
   - component: {fileID: 1870358784}
   - component: {fileID: 1870358786}
+  - component: {fileID: 1870358787}
   m_Layer: 0
   m_Name: bricks
   m_TagString: bricks
@@ -1504,3 +1508,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.366066, y: 1.2286888}
   m_EdgeRadius: 0
+--- !u!95 &1870358787
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870358783}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9294dee883f2b54a8d6440c0e41608c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

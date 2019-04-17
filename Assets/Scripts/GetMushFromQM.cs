@@ -8,13 +8,17 @@ public class GetMushFromQM : MonoBehaviour
     public Transform _mush;
     public float y_coor;
     Vector3 endpos;
-
+    public Sprite spr;
+    SpriteRenderer rend;
+    Animator anim;
 
     bool isMushGo = false;
 
     void Start()
     {
         endpos = _mush.position + new Vector3(0, y_coor, 0);
+        rend = gameObject.GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -30,6 +34,8 @@ public class GetMushFromQM : MonoBehaviour
         if (collision.gameObject.tag == "mario")
         {
             isMushGo = true;
+            anim.enabled = false;
+            rend.sprite = spr;
         }
     }
 }
