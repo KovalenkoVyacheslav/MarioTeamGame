@@ -27,7 +27,7 @@ public class MarioDestroy : MonoBehaviour {
         if (collision.gameObject.tag == "enemy")
         {
             MakeSound(destroyMario);
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("GameOver");
             Destroy(gameObject);
         }
     }
