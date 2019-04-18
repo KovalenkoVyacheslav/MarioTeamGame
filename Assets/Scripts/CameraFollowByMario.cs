@@ -10,7 +10,7 @@ public class CameraFollowByMario : MonoBehaviour
 
     void FixedUpdate()
     {
-        try
+        if (mario)
         {
             if (mario.position.x > transform.position.x)
             {
@@ -35,10 +35,7 @@ public class CameraFollowByMario : MonoBehaviour
                 }
             }
         }
-        catch(Exception exp)
-        {
-            Debug.Log("Error: " + exp.Message);
-            return;
-        }
+    
+        
     }
 }

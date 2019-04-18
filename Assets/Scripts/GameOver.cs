@@ -7,6 +7,7 @@ public class GameOver : MonoBehaviour
 {
     public void NewGame()
     {
+        Scores.scr = 0;
         SceneManager.LoadScene("Level1");
     }
 
